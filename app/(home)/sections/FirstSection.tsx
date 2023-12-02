@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const MainSection = () => {
+const FirstSection = () => {
   return (
     <div className="w-screen h-[467px] bg-[url('/main-img.png')] bg-cover" />
   );
 };
 
-export default MainSection;
+export default FirstSection;
