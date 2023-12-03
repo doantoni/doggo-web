@@ -5,7 +5,7 @@ import H4 from "@/app/components/Typography/H4";
 
 const FifthSection = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper className={"h-fit"}>
       <P>
         “Iza mene stoji više od dvadeset godina rada i druženja sa psima u
         različitim formama i okvirima, od rada s vlastitim psima uz savjete

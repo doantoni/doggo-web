@@ -4,7 +4,7 @@ import H1 from "@/app/components/Typography/H1";
 import RoundImageAndText from "@/app/components/RoundImageAndText";
 const SixthSection = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper className="pt-0">
       <H1>Zašto Snoopy?</H1>
       <div className="flex justify-between">
         <RoundImageAndText
