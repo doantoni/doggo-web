@@ -7,10 +7,11 @@ import SixthSection from "./sections/SixthSection";
 import SeventhSection from "./sections/SeventhSection";
 import EigthSection from "./sections/EigthSection";
 import Footer from "../components/Footer";
+import NavWrapper from "../components/NavWrapper";
+import { NavEnum } from "../components/Navigation";
 export default function Home() {
   return (
-    <div className="w-screen">
-      <Navbar />
+    <NavWrapper selected={NavEnum.NASLOVNA}>
       <FirstSection />
       <SecondSection />
       <ThirdSection />
@@ -19,6 +20,6 @@ export default function Home() {
       <SeventhSection />
       <EigthSection />
       <Footer />
-    </div>
+    </NavWrapper>
   );
 }
