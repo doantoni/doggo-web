@@ -1,9 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import H1 from "@/app/components/Typography/H1";
-import P from "@/app/components/Typography/P";
-import SliderDots from "@/app/components/SliderDots";
 import { DEFAULT_SECTION_HEIGHT } from "@/app/constants";
+import Image from "next/image";
+import { H1, P } from "@/app/components/Typography";
 const FirstSection = () => {
   return (
     <div
@@ -25,7 +23,6 @@ const FirstSection = () => {
         koje zastupamo u radu i druženju s našim i Vašim četveronožnim
         prijateljima.
       </P>
-      <SliderDots className="absolute bottom-8 left-1/2 transform -translate-x-1/2" />
     </div>
   );
 };
