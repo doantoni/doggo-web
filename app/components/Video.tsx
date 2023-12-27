@@ -1,21 +1,22 @@
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
 
 interface Props {
+  img: string;
   src: string;
 }
 
 const Video = (props: Props) => {
   const [isPlayMode, setIsPlayMode] = useState(false);
 
-  const height = "h-[650px]";
+  const height = 'h-[650px]';
 
   if (isPlayMode)
     return (
       <video
         onKeyDown={(e) => {
-          if (e.key === "Escape") setIsPlayMode(false);
+          if (e.key === 'Escape') setIsPlayMode(false);
         }}
         className={`w-full ${height}`}
         controls
@@ -33,7 +34,7 @@ const Video = (props: Props) => {
         className="w-screen h-full object-cover"
         width={1440}
         height={681}
-        src={"/video-placeholder.png"}
+        src={props.img}
         alt="video"
       />
       <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gray bg-fixed opacity-60"></div>
@@ -42,7 +43,7 @@ const Video = (props: Props) => {
         className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer"
         width={150}
         height={150}
-        src={"/play.svg"}
+        src={'/play.svg'}
         alt="play"
       />
     </div>
