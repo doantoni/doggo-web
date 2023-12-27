@@ -1,12 +1,14 @@
-import React from "react";
-import NavigationElement from "./NavigationElement";
+import React from 'react';
+import NavigationElement from './NavigationElement';
 
 export enum NavEnum {
-  NASLOVNA = "Naslovna",
-  PROGRAMI = "Programi",
-  SAVJETI = "Savjeti",
-  GALERIJA = "Galerija",
-  KONTAKT = "Kontakt",
+  NASLOVNA = 'Naslovna',
+  PROGRAMI = 'Programi',
+  SAVJETI = 'Savjeti',
+  GALERIJA = 'Galerija',
+  GALERIJA_SLIKE = 'Galerija-slike',
+  GALERIJA_VIDEOZAPISI = 'Galerija-videozapisi',
+  KONTAKT = 'Kontakt',
 }
 
 export const NavigationElements = [
@@ -28,7 +30,7 @@ const Navigation = (props: Props) => {
         return (
           <NavigationElement
             href={`/${
-              element === NavEnum.NASLOVNA ? "" : element.toLowerCase()
+              element === NavEnum.NASLOVNA ? '' : element.toLowerCase()
             }`}
             isSelected={props.selected === element}
             key={`nav-element-${element}`}

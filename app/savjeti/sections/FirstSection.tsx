@@ -8,7 +8,7 @@ const FirstSection = () => {
       className={`relative w-screen ${DEFAULT_SECTION_HEIGHT} overflow-hidden bg-cover bg-[50%] bg-no-repeat`}
     >
       <Image
-        className="h-full object-cover text-left"
+        className="h-full w-full object-cover text-left"
         width={1440}
         height={681}
         src={'/savjeti-header.png'}
